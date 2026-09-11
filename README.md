@@ -4,11 +4,9 @@ An end-to-end customer analytics and business intelligence project using Power B
 
  # 1. Project Overview
    
-    E-Commerce Customer Analytics is an end-to-end data analytics and business intelligence project designed to understand customer behavior, purchasing patterns, customer value, revenue performance, and churn.
-
-     The project analyzes 30,000 orders from 8,683 unique customers across multiple countries, customer segments, products, and membership statuses.
-
-     The objective was to transform raw transactional data into meaningful customer intelligence and actionable business insights using SQL, Python, Power Query, DAX, and Power BI.
+  E-Commerce Customer Analytics is an end-to-end data analytics and business intelligence project designed to understand customer behavior, purchasing patterns, customer value, revenue performance, and churn.
+  The project analyzes 30,000 orders from 8,683 unique customers across multiple countries, customer segments, products, and membership statuses.
+  The objective was to transform raw transactional data into meaningful customer intelligence and actionable business insights using SQL, Python, Power Query, DAX, and Power BI.
 
 
 
