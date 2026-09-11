@@ -253,8 +253,7 @@ Based on the analysis:
 
 
 ### Churn & Retention
-
-![Churn & Retention](screenshots/Churn%20%26%20Retention.png)
+![Churn & Retention](screenshots/screenshots-Churn%20%26%20Retention.png)
 
 
 
