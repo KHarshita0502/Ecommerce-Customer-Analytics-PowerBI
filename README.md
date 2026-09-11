@@ -1,4 +1,5 @@
-🔗 Ecommerce-Customer-Analytics
+# E-Commerce Customer Analytics
+
 An end-to-end customer analytics and business intelligence project using Power BI, SQL, Python, Excel, and DAX.
 
 1. Project Overview
