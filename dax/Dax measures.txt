@@ -1,1 +1,127 @@
+E-COMMERCE CUSTOMER ANALYTICS — DAX MEASURES
 
+1. Total Customers
+Total Customers =
+DISTINCTCOUNT('E-COM'[Customer_ID])
+
+
+2. Total Orders
+Total Orders =
+DISTINCTCOUNT('E-COM'[Order_ID])
+
+
+3. Total Revenue
+Total Revenue =
+SUM('E-COM'[Order_Amount])
+
+
+4. Average Order Value
+Average Order Value =
+DIVIDE(
+    [Total Revenue],
+    [Total Orders]
+)
+
+
+5. Average Customer Spend
+Avg Customer Spend =
+DIVIDE(
+    [Total Revenue],
+    [Total Customers]
+)
+
+
+6. Customer Total Spend
+Customer Total Spend =
+CALCULATE(
+    SUM('E-COM'[Order_Amount]),
+    ALLEXCEPT(
+        'E-COM',
+        'E-COM'[Customer_ID]
+    )
+)
+
+
+7. Customer Value Group
+Customer Value Group =
+VAR Spend = 'E-COM'[Customer Total Spend]
+RETURN
+    SWITCH(
+        TRUE(),
+        ISBLANK(Spend), "No Spend",
+        Spend <= 1000, "Low Value",
+        Spend <= 3000, "Medium Value",
+        "High Value"
+    )
+
+
+8. Churn Rate
+Churn Rate =
+VAR ChurnedCustomers =
+    CALCULATE(
+        DISTINCTCOUNT('E-COM'[Customer_ID]),
+        'E-COM'[Churn Status] = "Churned"
+    )
+RETURN
+    DIVIDE(
+        ChurnedCustomers,
+        [Total Customers]
+    )
+
+
+9. Churn Rate by Purchase Frequency
+Churn Rate by Purchase Frequency =
+VAR ChurnedCustomers =
+    CALCULATE(
+        DISTINCTCOUNT('E-COM'[Customer_ID]),
+        'E-COM'[Churn Status] = "Churned"
+    )
+VAR TotalCustomers =
+    DISTINCTCOUNT('E-COM'[Customer_ID])
+RETURN
+    DIVIDE(
+        ChurnedCustomers,
+        TotalCustomers
+    )
+
+
+10. Customer Spend Growth Display
+Customer Spend Growth Display =
+VAR CurrentSpend = [Avg Customer Spend]
+VAR PreviousSpend =
+    CALCULATE(
+        [Avg Customer Spend],
+        DATEADD('Calendar'[Date], -1, YEAR)
+    )
+VAR Growth =
+    DIVIDE(
+        CurrentSpend - PreviousSpend,
+        PreviousSpend
+    )
+RETURN
+    IF(
+        Growth >= 0,
+        "▲ " & FORMAT(Growth, "0.0%"),
+        "▼ " & FORMAT(ABS(Growth), "0.0%")
+    )
+
+
+11. Customer Spend Growth Color
+Customer Spend Growth Color =
+VAR CurrentSpend = [Avg Customer Spend]
+VAR PreviousSpend =
+    CALCULATE(
+        [Avg Customer Spend],
+        DATEADD('Calendar'[Date], -1, YEAR)
+    )
+VAR Growth =
+    DIVIDE(
+        CurrentSpend - PreviousSpend,
+        PreviousSpend
+    )
+RETURN
+    IF(
+        Growth >= 0,
+        "#00C853",
+        "#FF5252"
+    )
