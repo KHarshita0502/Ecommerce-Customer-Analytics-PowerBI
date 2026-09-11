@@ -236,3 +236,21 @@ Based on the analysis:
 - Business Intelligence
 - Data Visualization
 - Business Insight Generation
+
+# Dashboard Preview
+### Overview
+
+![Overview](screenshots/Overview.png)
+
+
+### Customer Intel
+
+![Customer Intel](screenshots/Customer%20Intel.png)
+
+
+### Churn & Retention
+
+![Churn & Retention](screenshots/Churn%20%26%20Retention.png)
+
+
+
