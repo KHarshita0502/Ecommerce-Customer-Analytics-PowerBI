@@ -173,9 +173,13 @@ Purchase Frequency & Churn
 Churn decreases as purchase frequency increases:
 
 | Purchase Frequency | Churn Rate |
+
 | 1 Order            | 76.0%      |
+
 | 2–3 Orders         | 49.5%      |
+
 | 4–6 Orders         | 25.5%      |
+
 | 7+ Orders          | 13.5%      |
 
 This indicates that repeat purchasing is strongly associated with better customer retention.
