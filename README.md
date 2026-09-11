@@ -2,7 +2,7 @@
 
 An end-to-end customer analytics and business intelligence project using Power BI, SQL, Python, Excel, and DAX.
 
-1. Project Overview
+ # 1. Project Overview
    
     E-Commerce Customer Analytics is an end-to-end data analytics and business intelligence project designed to understand customer behavior, purchasing patterns, customer value, revenue performance, and churn.
 
@@ -12,7 +12,8 @@ An end-to-end customer analytics and business intelligence project using Power B
 
 
 
-3. Business Problem
+# 2. Business Problem
+
 E-commerce businesses collect large volumes of customer and transaction data, but raw transactional data does not clearly answer important business questions such as:
 
 - Which customers are most valuable?
@@ -25,7 +26,8 @@ E-commerce businesses collect large volumes of customer and transaction data, bu
 Without these insights, businesses may struggle to prioritize retention efforts, improve customer engagement, and make data-driven decisions.
 
 
-3. What This Project Solves
+# 3. What This Project Solves
+   
 This project converts raw e-commerce transaction data into a customer analytics solution that helps the business:
 
 - Understand customer purchasing behavior
@@ -39,7 +41,7 @@ This project converts raw e-commerce transaction data into a customer analytics 
 
 
 
-4. Project Objectives
+# 4. Project Objectives
 
 - Analyze customer demographics and purchasing behavior
 - Segment customers based on total spending
@@ -52,7 +54,8 @@ This project converts raw e-commerce transaction data into a customer analytics 
 
 
 
-5. Dataset
+# 5. Dataset
+
 The dataset contains:
 
 - 30,000 orders
@@ -73,7 +76,7 @@ The dataset covers transactions from 2023 to 2026.
 
 
 
-6. Challenges Faced
+# 6. Challenges Faced
 
 Challenge 1 — Customer-level analysis
 Several customer attributes appeared at the transaction level and could change across different orders.
@@ -95,7 +98,7 @@ The dashboard needed to communicate multiple customer insights without becoming 
 The dashboard was therefore divided into focused analytical pages for overview, customer intelligence, and churn & retention.
 
 
-7. What We Did
+# 7. What We Did
  
 Data Preparation
 
@@ -144,7 +147,7 @@ Page 3 — Churn & Retention
 - Churn trend by year
 
 
-8. Key KPIs
+# 8. Key KPIs
 
 - Total Customers
 - Total Orders
@@ -154,7 +157,7 @@ Page 3 — Churn & Retention
 - Churn Rate
 
 
-9. Key Findings
+# 9. Key Findings
 
 Customer Base
 The dataset contains **8,683 unique customers** generating **30,000 orders**.
@@ -180,7 +183,7 @@ Churn decreases as purchase frequency increases:
 This indicates that repeat purchasing is strongly associated with better customer retention.
 
 
-10. Business Outcomes
+# 10. Business Outcomes
 The project provides a data-driven view of customer behavior and retention risk.
 The analysis helps the business:
 
@@ -194,7 +197,7 @@ The analysis helps the business:
 
 
 
-11. Business Recommendations
+# 11. Business Recommendations
 Based on the analysis:
 
 1.Target one-time customers with personalized offers and follow-up campaigns to encourage a second purchase.
@@ -208,7 +211,7 @@ Based on the analysis:
 5.Focus on customer value growth by converting low-value customers into repeat and higher-value customers.
 
 
-12. Tools & Technologies
+# 12. Tools & Technologies
 
 - Python
 - SQL
@@ -218,7 +221,7 @@ Based on the analysis:
 - DAX
 
 
-13. Skills Demonstrated
+# 13. Skills Demonstrated
 
 - Data Cleaning
 - Data Transformation
